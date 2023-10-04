@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Steven's BCIT Project</title>
+    <title>Steven Xie demo05</title>
     <meta name="comp1800 template" content="My 1800 App">
 
     <!-- Required meta tags -->
@@ -28,9 +28,9 @@
 <body>
     <!------------------------------>
     <!-- Your HTML Layout go here -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary-subtle">
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary-subtle">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="./images/logo.jpg" width="36" height="36">Boots</a>
+            <a class="navbar-brand" href="#"><img src="./images/logo.jpg" width="36" height="36">Arabica</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -72,61 +72,81 @@
     <!------------------------------>
     <!-- Stuff for body goes here -->
     <div class="px-4 pt-5 my-5 text-center border-bottom">
-        <h1 class="display-4 fw-bold">Boots</h1>
+        <h1 class="display-4 fw-bold">Arabica</h1>
         <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">Welcome to my hiking app called BOOTS! We will help you find the best hiking trails around your area.</p>
+            <p class="lead mb-4">Welcome to my coffee app called Arabica after the name for the plant species!
+                My website will help you learn about all the different brewing methods.</p>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-                <button type="button" class="btn btn-success btn-lg px-4 me-sm-3" onclick = "login.html">Login</button>
+                <button type="button" class="btn btn-success btn-lg px-4 me-sm-3" onclick="login.html">Login</button>
                 <button type="button" class="btn btn-danger btn-lg px-4">Leave</button>
             </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+            <div class="card">
+                <img src="./images/espresso.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Espresso</h5>
+                    <p class="card-text">Finely ground coffee pushed through a portafilter at high pressure making a 
+                        concentrated ounce of coffee.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="overflow-hidden" style="max-height: 30vh;">
-            <div class="container px-5">
-                <img src="./images/AM01.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image"
-                    width="700" height="500" loading="lazy">
+        <div class="col">
+            <div class="card">
+                <img src="./images/pour.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Pour-over</h5>
+                    <p class="card-text">Medium grind made with hot water poured over the grounds on top of a paper filter.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="./images/siphon.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Siphon</h5>
+                    <p class="card-text">Pour over, but with more science.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="./images/french.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">French Press</h5>
+                    <p class="card-text">Submerge the grounds and hot water, then squeeze down all the grounds.</p>
+                </div>
             </div>
         </div>
     </div>
 
-    
-    <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col">
-          <div class="card">
-            <img src="./images/hike1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <span class="text-muted">© 2023 Arabica Inc.</span>
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="./images/hike1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="./images/hike1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="./images/hike1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#twitter"></use>
+                        </svg></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#instagram"></use>
+                        </svg></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#facebook"></use>
+                        </svg></a></li>
+            </ul>
+        </footer>
+    </div>
     <!---------------------------------------------->
     <!-- Your own JavaScript functions go here    -->
     <!---------------------------------------------->
